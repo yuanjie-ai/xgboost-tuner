@@ -12,7 +12,7 @@ In both strategies, the user can configure the parameter space of interest throu
 
 #### Tuning XGBoost parameters through an incremental grid search
 
-```
+```python
 from sklearn.datasets import load_svmlight_file
 from xgboost_tuner.tuner import tune_xgb_params
 
@@ -39,7 +39,7 @@ best_params, history = tune_xgb_params(
 
 #### Tuning XGBoost parameters through randomized search
 
-```
+```python
 from sklearn.datasets import load_svmlight_file
 from xgboost_tuner.tuner import tune_xgb_params
 
