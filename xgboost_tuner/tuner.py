@@ -289,8 +289,8 @@ def tune_xgb_params_incremental(estimator_cls,
                 round((subsample_max - subsample_min) / subsample_step) + 1
             )
         },
-        {'reg_alpha': list(itertools.chain([10 ** i for i in range(-6, 3)], [(10 ** i) / 2 for i in range(-6, 3)]))},
-        {'reg_lambda': list(itertools.chain([10 ** i for i in range(-6, 3)], [(10 ** i) / 2 for i in range(-6, 3)]))}
+        {'reg_alpha': list(itertools.chain([0], [10 ** i for i in range(-6, 3)], [(10 ** i) / 2 for i in range(-6, 3)]))},
+        {'reg_lambda': list(itertools.chain([0], [10 ** i for i in range(-6, 3)], [(10 ** i) / 2 for i in range(-6, 3)]))}
     ]
     for param_grid in param_grids:
         new_params, score = tune_xgb_params_segment_by_grid(
