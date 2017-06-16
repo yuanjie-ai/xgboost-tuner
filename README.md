@@ -8,6 +8,22 @@ This library offers two strategies to automate this tuning - an incremental appr
 
 In both strategies, the user can configure the parameter space of interest through keyword arguments.
 
+## Installing xgboost-tuner
+
+#### PyPI
+
+To install xgboost-tuner, execute  
+
+```bash
+pip install xgboost-tuner  
+```
+
+Alternatively, you could download the package manually from the Python Package Index [https://pypi.python.org/pypi/xgboost-tuner](https://pypi.python.org/pypi/xgboost-tuner), unzip it, navigate into the package, and use the command:
+
+```bash
+python setup.py install
+```
+
 ## Examples
 
 #### Tuning XGBoost parameters through an incremental grid search
